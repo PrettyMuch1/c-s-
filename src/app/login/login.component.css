@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed&display=swap');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+body {
+  background: blanchedalmond;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+.page {
+  background: #e2e2e5;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+  background-color: blanchedalmond;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+
+  background: rgb(197, 197, 158);;
+  height: 7rem;
+  position: relative;
+  width: 50%;
+  text-align:center;
+}
+/*@media (max-width: 767px) {
+  .left {
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}*/
+.login {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+  color:black;
+  margin-top: 0;
+}
+
+.bottom-c {
+  background: rgb(197, 197, 158);
+  color: rgb(0, 0, 0);
+  position: relative;
+  top:70px;
+  right:19.05rem;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+svg {
+  position: absolute;
+  width: 320px;
+}
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  black;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: black;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+}
+input::-moz-focus-inner { 
+  border: 0; 
+}
+#submit {
+  color: black;
+  margin-top: 40px;
+  transition: color 300ms;
+}
+#submit:hover {
+  color: #706c61;
+}
+#submit:active {
+  color: #d0d0d2;
+}
+
+#regis{
+    color: #0808f3;
+    margin-top: 10px;
+    transition: color 300ms;
+  }
+  #regis:hover {
+    color: #56b2dd;
+  }
+
